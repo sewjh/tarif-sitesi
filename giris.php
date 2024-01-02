@@ -52,8 +52,12 @@ if (isset($_POST["login"])) {
     if ($result-> num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if ($row['kullanici_adi'] == $username && $row['kullanici_parola'] == $password) {
+                if ($row['kullanici_yasakli'] == "false") {
                 $permission = true;
                 break;
+                } else {
+                    $permission = false;
+                }
             } else {
                 $permission = false;
             }
@@ -64,9 +68,9 @@ if (isset($_POST["login"])) {
             $_SESSION["user"] = $username;
             $logged = true;
             $loggedUser = $username;
-            // header("location:profil.php");
+            header("location:profil.php");
          } else {
-            echo "<script>alert('Kullanıcı Adı veya parola yanlış!')</script>";
+            echo "<script>alert('Giriş başarısız!')</script>";
          }
 }
 ?>
