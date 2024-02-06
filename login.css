@@ -1,0 +1,74 @@
+body {
+    background-image: url("loginbg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 15%;
+}
+.loginBox {
+    height: 300px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.760);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 0px 20px black;
+}
+td.loginText {
+    color: white;
+}
+td input.inputLogin {
+    padding: 10px 20px;
+    padding-left: 35px;
+    width: 229px;
+    position: relative;
+    margin-left: 0px;
+}
+td i {
+    color: black;
+    margin-top: 5px;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    border-right: 1px solid black;
+    font-size: 20px !important;
+    padding: 5px;
+}
+td input.inputLogin:focus {
+    outline: none;
+}
+td input.submitBtn {
+    padding: 5px 10px;
+    width: 227px;
+    margin-left: 1px;
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    margin-top: 1px;
+    transition: 0.3s;
+}
+td input.submitBtn:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+h2.girisBaslik {
+    color: white;
+    position: absolute;
+    top: 8%;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+a {
+    color: white;
+    text-decoration: none !important;
+    transition: 0.3s;
+}
+a:hover {
+    color: rgb(175, 141, 102);
+    margin-left: 10px;
+}
+.kayitYazi {
+    color: white;
+}

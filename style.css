@@ -1,0 +1,635 @@
+body {
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center ;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+a {
+    color: white;
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none;
+}
+div.header {
+    height: 150px;
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.760);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid white;
+}
+div.header .logo {
+    margin-left: -106px;
+    z-index: 1;
+}
+div.search .search-box {
+    height: 40px;
+    font-size: 18px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 3px 5px black;
+    border: 0;
+    border-left: 0;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+div.search .search-box:focus {
+    outline: none;
+    width: 175px;
+}
+div.search .search-box:hover {
+    width: 175px;
+}
+span.search-icon {
+    background-color: white;
+    border: 0;
+    border-right: 0;
+    padding: 13px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 1px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.41);
+}
+div.links ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 1200px;
+    justify-content: space-between;
+}
+div.links ul li a{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+    margin-top: -15px;
+}
+div.links ul li a:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+div.pos {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.ppss {
+    margin-top: 20px;
+}
+div.giris-yap-btn {
+    display: flex;
+}
+div.giris-yap-btn li a{
+    display: inline-block;
+    color: black !important;
+    background-color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: 0.2s;
+    margin-left: 10px;
+}
+div.giris-yap-btn li a:hover {
+    background-color: transparent !important;
+    border: 1px solid white;
+    color: white !important;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 6px white;
+    text-shadow: 0px 0px 6px white;
+}
+div.main-box {
+    margin-top: 10px;
+    height: auto;
+    padding: 30px;
+    padding-top: 0px;
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.760);
+    overflow-x: hidden;
+    border: 1px solid white;
+}
+.baslik {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+hr {
+    width: 600px;
+}
+.lineBox{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.751);
+    transition: 0.3s ease-out;
+    box-shadow: 0px 10px 50px black;
+    margin-bottom: 75px;
+}
+.lineBox::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+}
+.lineBox h1{
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    box-shadow: 0px 0px 15px black;
+    font-size: 28px;
+    border: 0px solid white;
+    padding: 0px 12px;
+}
+.lineBox:hover {
+}
+.box {
+    height: 320px;
+    width: 320px;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid white;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    position: relative;
+}
+.tarifler {
+    margin-top: -70px;
+    padding: 8px 0px;
+}
+.tarifBaslik {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    padding: 5px 0px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.tarifBaslik:hover {
+    background-color: black;
+    box-shadow: 0px 0px 5px white;
+}
+.box:hover {
+    transform: scale(1.1);
+}
+.banner {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("loginbg.jpg");
+    margin-top: 40px;
+    margin-bottom: 25px;
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px black;
+}
+.bannerText {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+    background-color: black;
+    animation: textAni 2.4s infinite ease;
+    padding: 5px 15px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px black;
+}
+@keyframes textAni {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+table.tarifEkle td {
+    color: white;
+}
+td input.inputLogin {
+    padding: 10px 20px;
+    width: 229px;
+    position: relative;
+    margin-left: 0px;
+    color: black;
+    border-radius: 10px;
+}
+td i {
+    color: black;
+    margin-top: 5px;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    border-right: 1px solid black;
+    font-size: 20px !important;
+    padding: 5px;
+}
+td input.inputLogin:focus {
+    outline: none;
+}
+td input.submitBtn {
+    padding: 5px 10px;
+    width: 227px;
+    margin-left: 1px;
+    color: black;
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    margin-top: 1px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+td input.submitBtn:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+textarea {
+    resize: none;
+    color: black !important;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+textarea:focus {
+    outline: none;
+}
+div.recipeSearch-box {
+    margin-top: 30px;
+}
+input:focus {
+    outline: none;
+}
+select.recipeSearchSelect {
+    position: relative;
+    margin-left: 0 !important;
+    padding: 7px 8px !important;
+    border-bottom: 1px solid white !important;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+select {
+    outline: none;
+}
+input.recipeSearchText, select.recipeSearchSelect, input.recipeSearchButton {
+    padding: 5px 8px;
+    font-size: 20px;
+    margin: 0;
+    background-color: white;
+    margin-left: -5px;
+    border: 0;
+    box-shadow: 0px 3px 5px black;
+    transition: 0.3s;
+}
+input.recipeSearchText {
+    width: 800px;
+}
+input.recipeSearchButton {
+    padding: 5px 20px !important;
+    transition: 0.3s;
+    width: 100px;
+}
+input.recipeSearchButton:hover {
+    width: 120px;
+}
+select.inputLogin {
+    padding: 10px 20px;
+    width: 229px;
+    position: relative;
+    margin-left: 0px;
+    color: black;
+    border-radius: 10px;
+}
+div.posit {
+    display: flex;
+    justify-content: space-between;
+}
+.inb {
+
+}
+div.tumTarifler {
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.600);
+}
+img.tarifGorsel {
+    border: 1px solid white;
+}
+p.tarifAciklama {
+    padding: 25px;
+}
+h1.tarifAdi {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+div.tarifMalzemeler {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 5px 0px;
+}
+img.tarifMalzemeGorsel {
+    border: 1px solid white;
+    /* border-radius: 100%; */
+    height: 29px;
+    width: 29px;
+    padding: 2px;
+    background-color: black;
+    transition: 0.3s;
+}
+img.tarifMalzemeGorsel:hover {
+    transform: scale(1.6);
+}
+img.tarifMalzemeGorsel:active {
+    transform: scale(2.9);
+    z-index: 1;
+}
+.malz_baslik {
+    font-size: 20px;
+}
+.recipeTypeSearchButton {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 200px !important;
+}
+.recipeTypeSearchButton:hover {
+    width: 220px !important;
+}
+.tarifBilgileri {
+    color:white;
+}
+img.pp {
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 100%;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid white;
+}
+.profilMenu {
+    position: absolute;
+    left: 0;
+    top: 90px;
+}
+.profilMenu ul li a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.3s;
+}
+.profilMenu ul li {
+    margin-bottom: 0px;
+}
+.profilMenu ul li a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+input.submitBtn {
+    padding: 5px 10px;
+    width: 227px;
+    margin-left: 1px;
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    margin-top: 1px;
+    transition: 0.3s;
+}
+input.inputText {
+    padding: 5px 10px;
+}
+label {
+    color: white;
+}
+form.parolaDegistir {
+    margin-top: 25px;
+}
+.submitBtn:hover {
+    transform: scale(1.1);
+}
+div.siparisSiteButon {
+    padding: 10px 30px;
+    background-image: url("loginbg.jpg");
+    background-position: center;
+    background-size: 650px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 5px white;
+    animation: btnAni 2.4s infinite ease-in-out;
+    opacity: 0.5;
+}
+div.siparisSiteButon:hover {
+    opacity: 1;
+    cursor: pointer;
+    animation: none;
+    box-shadow: 0px 0px 15px white;
+}
+@keyframes btnAni {
+    0% {transform:translateX(0px);}
+    50% {transform:translateX(-10px);}
+    100% {transform:translateX(0px);}
+}
+.malzemelerBaslik {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding: 5px 20px;
+    margin-top: 0;
+    background-color: white;
+}
+.malzemelerBox {
+    border: 1px solid white;
+    width: 240px;
+    padding-top: 0;
+    position: relative;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+ul.malzemeler li {
+    color: white;
+    list-style: none;
+}
+ul.malzemeler {
+    margin: 0;
+    padding: 0;
+}
+.inputLog {
+    padding: 10px 20px;
+    width: 229px;
+    position: relative;
+    margin-left: 0px;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+}
+.subBtn {
+    padding: 5px 10px;
+    width: 227px;
+    margin-left: 1px;
+    color: black;
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    margin-top: 1px;
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 100%;
+}
+.subBtn:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+textarea {
+    resize: none;
+    color: black !important;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+input.malzemeButon {
+    color: black;
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+input.malzemeButon:hover {
+    transform: translateX(5px);
+}
+table.malzemeTablo td { 
+}
+input.onaylaButon {
+    color: black;
+    border: 0;
+}
+table.malzemeTablo2 td{
+    border: 1px solid white;
+}
+.malzBaslik {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.tariflerMalz {
+    border: 0 !important;
+}
+.tariflerMalz:hover {
+    border: 1px solid white !important;
+}
+.mesajlar {
+    color: white;
+}
+.mesajGorsel {
+    background-image: url("profilfoto/default.jpeg");
+    height: 200px;
+    min-width: 200px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.747);
+}
+.posit2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.mesajAciklama {
+    background-color: white;
+    color: black;
+    margin-left: -50px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    padding-left: 65px !important;
+    width: 1000px;
+    height: 150px;
+    position: relative;
+    overflow: scroll;
+    z-index: 1;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.747);
+}
+.gonderenBilgi {
+    height: 60px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+}
+.tarifTarih {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: white;
+    color: black;
+    padding: 0px 2px;
+}
+.tarifYazar {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    background-color: white;
+    color: black;
+    padding: 0px 2px;
+}
+.tarifKutusu {
+    position: relative;
+}
+.malzemeler {
+    margin-top: 10px;
+}
